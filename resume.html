@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Alexander Wodarski</title>
+
+  <!-- Foundation CSS -->
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <style>
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: .25rem;
+      margin-top: 2rem;
+    }
+    .resume-section {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mobile Nav -->
+  <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">My Portfolio</div>
+  </div>
+
+  <!-- Main Nav -->
+  <div class="top-bar" id="main-menu">
+    <div class="top-bar-left">
+      <ul class="menu vertical medium-horizontal">
+        <li class="menu-text show-for-medium">My Portfolio</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html" class="is-active">Resume</a></li>
+        <li><a href="fun.html">Astrophotography</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="grid-container" style="margin-top: 1rem;">
+    <div class="grid-x align-justify align-middle">
+      <div class="cell auto">
+        <h1>Alexander Wodarski</h1>
+        <p>
+          Brooklyn Park, MN<br> • 
+          <a href="mailto:alexander.wodarski0@gmail.com">alexander.wodarski0@gmail.com</a>
+        </p>
+      </div>
+      <div class="cell shrink">
+        <a class="button small" href="Alexander_Wodarski_Resume.pdf" target="_blank">Download PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="grid-container">
+    <!-- Education -->
+    <section class="resume-section">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Science in Computer Science</strong>, University of St. Thomas, Saint Paul, MN<br>
+        <em>December 2025</em> — GPA: 3.83</p>
+      <ul>
+        <li>Dean's List: Spring: 2024, 2025; Fall: 2025</li>
+        <li>Delta Epsilon Sigma Member</li>
+        <li>Transfer Scholarship Recipient</li>
+        <li>Relevant Coursework: Computer Architecture, Information Security, Web Development, Algorithms, Database 
+          Design I, Senior Capstone, Advance Business Intelligence Development 
+        </li>
+        <li>Computer Science Club Member</li>
+      </ul>
+      <p><strong>Assocaite of Arts in Liberal Arts</strong>, North Hennepin Community College, Brooklyn Park, MN<br>
+        <em>December 2023</em> — GPA: 3.94</p>
+      <ul>
+        <li>Dean's List: Spring: 2021, 2022, 2023; Fall: 2020, 2021</li>
+        <li>Phi Theta Kappa Member</li>
+        <li>Relevant Coursework: Programming in C# for .NET, Intro Comp Prog/Java, 
+          Object Oriented Programming, Data Structures and Algorithms, Programming in Python
+        </li>
+      </ul>
+    </section>
+
+    <!-- Certifications -->
+    <section class="resume-section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>CompTIA - Security+</li>
+        <li>PCEP - Certified Entry-Level Python Programmer</li>
+        <li>North Hennepin - Object-Oriented Programming Certificate</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="resume-section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: Java, Python, C#</li>
+        <li>Troubleshooting & Problem-Solving</li>
+        <li>Organization & Time Management</li>
+        <li>Analytical and Critical Thinking</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="resume-section">
+      <h2>Experience</h2>
+
+      <h3>Convention Clothing Catalogue — Full-Stack Web Application</h3>
+      <p><em>University of Saint Thomas, Saint Paul, MN</em></p>
+      <ul>
+        <li>Built a Flask + SQLite3 web app with user accounts, product browsing, wish lists, and admin inventory management.</li>
+        <li>Designed and implemented the database schema with parameterized SQL queries, hashed passwords, and authentication controls.</li>
+        <li>Utilized AI tools to outline the system design, then refined/debugged implementation to ensure accuracy and functionality.</li>
+      </ul>
+
+      <h3>Game Server Administrator</h3>
+      <ul>
+        <li>Managed user issues, providing timely resolutions and enhancing user experience (2 hrs/day).</li>
+        <li>Conducted 5 interviews for staff positions, contributing to team-building efforts.</li>
+        <li>Collaborated with a team to manage staff operations, ensuring smooth server functionality and community engagement.</li>
+      </ul>
+
+      <h3>Course Content Management System - GitLab Integration Upgrade</h3>
+      <p><em>University of Saint Thomas, Saint Paul, MN</em></p>
+      <ul>
+        <li>Collaborated with a 5-person senior capstone team to enhance a course content management system
+          by migrating from a single GitLab access token to user-specific tokens.
+        </li>
+        <li>Implemented backend integration with the GitLab API and developed secure handling for user authentication tokens.</li>
+        <li>Improved system security, accountability, and maintainability while working within a Scrum-inspired agile development process.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <small>© <span id="year"></span> Alex Wodarski</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
